@@ -1,0 +1,22 @@
+name: 'Get dbt Cloud Run Id'
+description: 'Get the Run Id from dbt Cloud for a given GitHub PR number.'
+inputs:
+  dbt_cloud_account_id:
+    description: "dbt Cloud Account Id"
+    required: true
+  dbt_cloud_api_key:
+    description: "dbt Cloud API Key"
+    required: true
+  dbt_cloud_job_id:
+    description: "The dbt Cloud Job Definition Id to search for associated runs."
+    required: true
+  dbt_cloud_request_limit:
+    description: "Record limit to apply when listing runs."
+    required: false
+    default: "100"
+outputs:
+  runId:
+    description: "The most recent dbt Cloud Run Id that is associated to the pull request."
+runs:
+  using: 'node16'
+  main: 'index.js'
