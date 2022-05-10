@@ -17,6 +17,9 @@ inputs:
 outputs:
   runId:
     description: "The most recent dbt Cloud Run Id that is associated to the pull request."
+branding:
+  icon: 'cloud'  
+  color: 'orange'
 runs:
   using: 'node16'
   main: 'index.js'
