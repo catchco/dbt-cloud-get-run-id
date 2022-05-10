@@ -4,8 +4,8 @@ This action finds the most recent dbt Cloud run id that was triggered by the giv
 
 ### Inputs
   **Required**:
-  - `dbt_cloud_token` - dbt Cloud API Key
   - `dbt_cloud_account_id` - dbt Cloud Account Id
+  - `dbt_cloud_api_key` - dbt Cloud API Key
   - `dbt_cloud_job_id` - dbt Cloud Job Id
 
   **Optional**:
